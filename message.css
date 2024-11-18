@@ -1,0 +1,26 @@
+
+.button {
+    padding: 15px 30px;
+    font-size: 20px;
+    width:16em;
+    height: 8em;
+    color: white;
+    background-color: #008CBA;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 5px #006f94;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.button:active {
+    box-shadow: 0 2px #006f94;
+    transform: translateY(3px);
+}
+a{
+    text-decoration: none;
+    font-size: 3em;
+}

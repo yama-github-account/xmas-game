@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>2D タイルマップ</title>
+</head>
+<body>
+  <p><p id="count">現在プレゼント回収数:0</p><p id="count1">残りプレゼント数:65</p></p>
+<canvas id="gameCanvas" width="2240" height="1120"></canvas>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>矢印ボタン</title>
+    <style>
+        table {
+            margin: auto;
+            text-align: center;
+        }
+        button {
+            font-size: 24px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td></td>
+            <td><button onclick="p('Up')">↑</button></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><button onclick="p('Left')">←</button></td>
+            <td></td>
+            <td><button onclick="p('Right')">→</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button onclick="p('Down')">↓</button></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<script src="index.js"></script>
+</body>
+</html>

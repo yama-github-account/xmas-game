@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="「MessageViewJS」は、ゲーム内でよくある会話シーンを簡単実装できる、JavaScriptライブラリです。">
+    <meta name="keywords" content="Webゲーム,HTML5,会話シーン,JavaScript,ライブラリ">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="MessageViewJS - Talking Scene JavaScript Library">
+    <meta property="og:description" content="「MessageViewJS」は、ゲーム内でよくある会話シーンを簡単実装できる、JavaScriptライブラリです。">
+    <meta property="og:url" content="http://webcyou.com/message_view_js/">
+    <meta property="og:image" content="http://webcyou.com/message_view_js/demo/img/screen_shot_ogp.png">
+    <meta property="og:site_name" content="MessageViewJS - Talking Scene JavaScript Library">
+    <link href="message.css" rel="stylesheet" type="text/css">
+    <title>MessageView.js</title>
+    <link rel="shortcut icon" href="http://webcyou.com/message_view_js/demo/img/favicon.ico">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="css/sample.css" rel="stylesheet" type="text/css" media="screen" />
+    <script src="js/message_view.js" type="text/javascript"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var message = new MessageViewer({
+                "data": [{
+                    "side_class": "right",
+                    "name": "サンタクロース",
+                    "message":"あーあ、今日も疲れたー",
+                    "img_url": "../assets/22310246.png"
+                },
+                {
+                    "side_class": "left",
+                    "name": "シカ",
+                    "message":"ボーっとしてたら危ないですよ！サンタさん！",
+                    "img_url": "../assets/1599.png"
+                },
+                {
+                    "message":"ていうかなんか紐ゆるくないですか？"
+                },
+                   {
+                    "side_class": "center",
+                    "name": "サンタクロース",
+                    "message":"え？<br>うわぁぁぁ！",
+                    "img_url": "../assets/22310246.png"
+                }],
+                "option": {
+                    "loop": false
+                }
+            });
+        }, false);
+        function click(){
+                window.location.href = 'start.html';
+            }
+    </script>
+</head>
+<body>
+<section id="sample" class="sample001">
+
+
+
+<div class="jumbotron top">
+
+
+        <div class="messageView" id="default">
+            <div class="mv-contents">
+                <p class="mv-name"></p>
+                <div class="mv-comment">
+                    <p class="val"></p>
+                    <p class="pointer" onclick="click()"></p>
+                </div>
+                <p class="mv-image character"><img src="" alt=""/></p>
+            </div>
+        </div><!-- /.messageView -->
+        <button class="button"><a href="start.html">スタート</a></button>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3段階トグルスイッチ</title>
+    <link rel="stylesheet" href="styletoggle.css">
+</head>
+<body>
+    <table>
+    <tr><td><div class="toggle-switch">
+        <input type="radio" name="toggle" id="option-0" />
+        <input type="radio" name="toggle" id="option-1" />
+        <input type="radio" name="toggle" id="option-2" />
+        <div class="switch">
+            <label for="option-0" class="switch-label option-0" onclick="moveToggle(0)">低</label>
+            <label for="option-1" class="switch-label option-1" onclick="moveToggle(60)">中</label>
+            <label for="option-2" class="switch-label option-2" onclick="moveToggle(120)">高</label>
+            <div class="slider"></div>
+        </div>
+    </div></td>
+</tr>
+    <tr><td><div class="button-container">
+        <button class="stylish-button">クリック</button>
+    </div></td></tr>
+</table>
+    <script src="script.js"></script>
+</body>
+</html>

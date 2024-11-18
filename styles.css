@@ -1,0 +1,155 @@
+.button {
+  display       : inline-block;
+  border-radius : 18%;        
+  font-size     : 26pt;        
+  text-align    : center;     
+  cursor        : pointer;     
+  padding       : 12px 12px;  
+  background    : #000066;     
+  color         : #ffffff;     
+  line-height   : 1em;         
+  transition    : .3s;         
+  box-shadow    : 9px 9px 10px #666666;
+  border        : 2px solid #000066; 
+}
+.button:hover {
+  box-shadow    : none;        
+  color         : #000066;     
+  background    : #ffffff;     
+}
+@font-face {
+  font-family: "myfont";
+  src: url("font/misaki_gothic_2nd.ttf") format("truetype");
+  font-display: swap;
+}
+#tutorial{
+  font-family: "myfont",sans-serif;
+  display       : inline-block;
+  font-size     : 26px;
+  text-align    : center;
+  background    : white;
+  border: #575a42 3px solid;
+  padding:10px;
+  position: absolute; 
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 400px;
+  height: 100px;
+}
+#tutorial1{
+  font-family: "myfont",sans-serif;
+  display       : inline-block;
+  font-size     : 26px;
+  text-align    : center;
+  background    : white;
+  border: #575a42 3px solid;
+  padding:10px;
+  position: absolute; 
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 400px;
+  height: 100px;
+}
+body{
+  background-color: black;
+}
+div.parent {
+  position: relative;
+  height: 60vh;
+}
+.Download-button {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 12px 20px;
+  color: white;
+  background: rgb(103, 92, 156);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(59, 48, 78, 0.527);
+  letter-spacing: 0.05em;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.Download-button svg {
+  margin-right: 8px;
+  width: 25px;
+}
+
+.Download-button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em rgba(88, 71, 116, 0.627);
+}
+
+.Download-button:active {
+  box-shadow: 0 0.3em 1em -0.5em rgba(88, 71, 116, 0.627);
+}
+
+.Download-button::before {
+  content: "";
+  width: 4px;
+  height: 40%;
+  background-color: white;
+  position: absolute;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  left: 0;
+  transition: all 0.2s;
+}
+
+.Download-button::after {
+  content: "";
+  width: 4px;
+  height: 40%;
+  background-color: white;
+  position: absolute;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  right: 0;
+  transition: all 0.2s;
+}
+
+.Download-button:hover::before,
+.Download-button:hover::after {
+  height: 60%;
+}
+#a{
+  text-decoration: none;
+  color:white;
+}
+#a span {
+  /* 初期値のinlineではtransformが効かないためinline-blockを指定 */
+  font-size: 60px;
+
+  /* オレンジと黒が50%の位置で切り替わるグラデーション */
+  background: linear-gradient(to right, orange 50%, #000 50%) 100%;
+  /* 背景をテキストで切り抜く */
+
+  /* 横幅は200%にしてグラデーションの青部分は見えないようにする */
+  background-size: 200% 100%;
+  display: inline-block;
+  padding-bottom: 3px; /* テキストと下線の間隔 */
+  background-image: linear-gradient(#ebebeb, #000);
+  background-repeat: no-repeat;
+  background-position: bottom right; /* 下線の初期位置 */
+  background-size: 0 1px; /* 下線のサイズ（横幅、高さ） */
+  transition: background-size 0.3s;
+}
+
+#a:hover span {
+  background-position: 0 100%;
+  background-position: bottom left; /* 下線のホバー時位置 */
+  background-size: 100% 3px; /* 下線の横幅を100%にする */
+}
+#icon{
+  fill: #25c776;
+}

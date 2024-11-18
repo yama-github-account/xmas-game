@@ -1,0 +1,50 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "map.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "file.lastUsedOpenFilter": "すべてのファイル (*)",
+    "fileStates": {
+        "C:/Users/yama1/desktop/xmas-game/map.tmx": {
+            "scale": 0.3198333333333333,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 639.3955184992183,
+                "y": 1200.6253256904638
+            }
+        },
+        "map.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 209,
+                "y": 558
+            }
+        },
+        "tileset.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.exportedFilePath": "C:/Users/yama1/Desktop/xmas-game/assets",
+    "last.imagePath": "C:/Users/yama1/Desktop/xmas-game/assets",
+    "map.height": 35,
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
+    "map.lastUsedFormat": "tmx",
+    "map.width": 70,
+    "openFiles": [
+        "map.tmx",
+        "tileset.tsx"
+    ],
+    "project": "map.tiled-project",
+    "recentFiles": [
+        "tileset.tsx",
+        "map.tmx",
+        "C:/Users/yama1/desktop/xmas-game/map.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx"
+}
